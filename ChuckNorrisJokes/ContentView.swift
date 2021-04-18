@@ -14,7 +14,7 @@ struct ContentView: View {
                     image.aspectRatio(contentMode: .fit)
                    })
         }
-        Text(viewModel.joke)
+        Text(viewModel.message)
           .font(.system(size: 19))
           .padding()
         Button("Press me", action: {

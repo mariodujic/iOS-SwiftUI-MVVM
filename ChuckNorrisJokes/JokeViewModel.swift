@@ -4,7 +4,7 @@ class JokeViewModel: ObservableObject {
   
   private var apiService = JokeApiService()
   
-  @Published var joke: String = ""
+  @Published var message: String = ""
   @Published var image: String = ""
   
   func fetchWeather() {
@@ -17,8 +17,8 @@ class JokeViewModel: ObservableObject {
       do {
         let model = try JSONDecoder().decode(JokeModel.self, from: data)
         DispatchQueue.main.async {
-          self.joke = model.value
-          self.image = model.icon_url
+          self.message = model.message
+          self.image = model.image
         }
       }catch {
         print("Failed to fetch joke")
