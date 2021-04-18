@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		76AE4CCB262B354E0028F2EE /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CCA262B354E0028F2EE /* JokeModel.swift */; };
 		76AE4CD0262B35630028F2EE /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CCF262B35630028F2EE /* JokeViewModel.swift */; };
 		76AE4CD5262B357B0028F2EE /* JokeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CD4262B357B0028F2EE /* JokeApiService.swift */; };
+		76AE4CE1262BF88C0028F2EE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CE0262BF88C0028F2EE /* State.swift */; };
 		77C529378C13C30B39C732BF /* Pods_ChuckNorrisJokesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95BB38861A072E102F9DE38 /* Pods_ChuckNorrisJokesTests.framework */; };
 		C9DCF457065085EAA67024B1 /* Pods_ChuckNorrisJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5AC793E6190304E3EA35FD /* Pods_ChuckNorrisJokes.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		76AE4CCA262B354E0028F2EE /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
 		76AE4CCF262B35630028F2EE /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		76AE4CD4262B357B0028F2EE /* JokeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeApiService.swift; sourceTree = "<group>"; };
+		76AE4CE0262BF88C0028F2EE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		8F5AC793E6190304E3EA35FD /* Pods_ChuckNorrisJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46D067537DB0B952E9AAF31 /* Pods-ChuckNorrisJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokes.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokes/Pods-ChuckNorrisJokes.debug.xcconfig"; sourceTree = "<group>"; };
 		E2D485A9D92E0B1E6237C294 /* Pods-ChuckNorrisJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokes.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokes/Pods-ChuckNorrisJokes.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				76AE4CCA262B354E0028F2EE /* JokeModel.swift */,
 				76AE4CCF262B35630028F2EE /* JokeViewModel.swift */,
 				76AE4CD4262B357B0028F2EE /* JokeApiService.swift */,
+				76AE4CE0262BF88C0028F2EE /* State.swift */,
 			);
 			path = ChuckNorrisJokes;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				76AE4C97262B34B90028F2EE /* ChuckNorrisJokesApp.swift in Sources */,
 				76AE4CCB262B354E0028F2EE /* JokeModel.swift in Sources */,
 				76AE4CD0262B35630028F2EE /* JokeViewModel.swift in Sources */,
+				76AE4CE1262BF88C0028F2EE /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

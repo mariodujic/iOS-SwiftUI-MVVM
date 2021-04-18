@@ -4,24 +4,25 @@ class JokeViewModel: ObservableObject {
   
   private var apiService = JokeApiService()
   
-  @Published var message: String = ""
-  @Published var image: String = ""
+  @Published var state: State = State<JokeModel>.initial
   
-  func fetchWeather() {
+  func fetchJoke() {
+    
+    state = State<JokeModel>.loading
     
     let task = apiService.getUrlSession(){data, _ , error in
       guard let data = data, error == nil else {
+        self.state = State<JokeModel>.error("Request error")
         return
       }
       
       do {
         let model = try JSONDecoder().decode(JokeModel.self, from: data)
         DispatchQueue.main.async {
-          self.message = model.message
-          self.image = model.image
+          self.state = State<JokeModel>.data(model)
         }
       }catch {
-        print("Failed to fetch joke")
+        self.state = State<JokeModel>.error("Unable to deserialize data")
       }
     }
     task?.resume()
