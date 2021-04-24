@@ -22,7 +22,7 @@ struct ContentView: View {
     switch viewModel.state {
     case .initial:
       return AnyView(
-        Image("down_arrow")
+        Image("downArrow")
           .resizable()
           .scaledToFit()
       )
