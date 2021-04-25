@@ -5,16 +5,19 @@ target 'ChuckNorrisJokes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'URLImage'
-
+  pod 'RealmSwift'
+  
   # Pods for ChuckNorrisJokes
 
   target 'ChuckNorrisJokesTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RealmSwift'
   end
 
   target 'ChuckNorrisJokesUITests' do
     # Pods for testing
+    pod 'RealmSwift'
   end
 
 end

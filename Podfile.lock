@@ -1,4 +1,9 @@
 PODS:
+  - Realm (10.7.3):
+    - Realm/Headers (= 10.7.3)
+  - Realm/Headers (10.7.3)
+  - RealmSwift (10.7.3):
+    - Realm (= 10.7.3)
   - URLImage (2.2.3):
     - URLImage/Common (= 2.2.3)
     - URLImage/DownloadManager (= 2.2.3)
@@ -20,15 +25,20 @@ PODS:
   - URLImage/RemoteContentView (2.2.3)
 
 DEPENDENCIES:
+  - RealmSwift
   - URLImage
 
 SPEC REPOS:
   trunk:
+    - Realm
+    - RealmSwift
     - URLImage
 
 SPEC CHECKSUMS:
+  Realm: 472ea9ad72cee02df140dfd2926f482df6addbd2
+  RealmSwift: 7462f44bc04b61505ef70e4863ee7ce48fa12ede
   URLImage: 1eeb43e09cd736008da21944ba51d433ef41c09d
 
-PODFILE CHECKSUM: eedc12dd27ca3184892baccb07eddcf3b94b1958
+PODFILE CHECKSUM: 40159eae9f941d7e523cb3ae8ae39033e7c1ae1a
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

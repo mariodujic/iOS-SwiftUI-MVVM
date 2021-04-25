@@ -1,6 +1,10 @@
 import Foundation
 
-class JokeApiService {
+protocol JokeApiServiceProtocol {
+  func getUrlSession(completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask?
+}
+
+class JokeApiService: JokeApiServiceProtocol {
   
   private static let BASE_URL = "https://api.chucknorris.io/jokes/random"
   

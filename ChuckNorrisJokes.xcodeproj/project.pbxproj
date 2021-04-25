@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7387E00B28D5E926DD18238C /* Pods_ChuckNorrisJokes_ChuckNorrisJokesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265BDF0C7767807FFA2F3C22 /* Pods_ChuckNorrisJokes_ChuckNorrisJokesUITests.framework */; };
+		766A1A492634A41700555757 /* JokeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766A1A482634A41700555757 /* JokeStorage.swift */; };
 		76AE4C97262B34B90028F2EE /* ChuckNorrisJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4C96262B34B90028F2EE /* ChuckNorrisJokesApp.swift */; };
-		76AE4C99262B34B90028F2EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4C98262B34B90028F2EE /* ContentView.swift */; };
+		76AE4C99262B34B90028F2EE /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4C98262B34B90028F2EE /* JokeView.swift */; };
 		76AE4C9B262B34B90028F2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AE4C9A262B34B90028F2EE /* Assets.xcassets */; };
 		76AE4C9E262B34B90028F2EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76AE4C9D262B34B90028F2EE /* Preview Assets.xcassets */; };
 		76AE4CA9262B34B90028F2EE /* ChuckNorrisJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CA8262B34B90028F2EE /* ChuckNorrisJokesTests.swift */; };
@@ -18,6 +19,8 @@
 		76AE4CD0262B35630028F2EE /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CCF262B35630028F2EE /* JokeViewModel.swift */; };
 		76AE4CD5262B357B0028F2EE /* JokeApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CD4262B357B0028F2EE /* JokeApiService.swift */; };
 		76AE4CE1262BF88C0028F2EE /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE4CE0262BF88C0028F2EE /* State.swift */; };
+		76D95D112634AB1B00C66CC2 /* RealmUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D95D102634AB1B00C66CC2 /* RealmUtils.swift */; };
+		76D95D1B2634ABC000C66CC2 /* JokeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D95D1A2634ABC000C66CC2 /* JokeRepository.swift */; };
 		77C529378C13C30B39C732BF /* Pods_ChuckNorrisJokesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F95BB38861A072E102F9DE38 /* Pods_ChuckNorrisJokesTests.framework */; };
 		C9DCF457065085EAA67024B1 /* Pods_ChuckNorrisJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5AC793E6190304E3EA35FD /* Pods_ChuckNorrisJokes.framework */; };
 /* End PBXBuildFile section */
@@ -43,9 +46,10 @@
 		024F33A7EEA4C245D2108DDF /* Pods-ChuckNorrisJokes-ChuckNorrisJokesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokes-ChuckNorrisJokesUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokes-ChuckNorrisJokesUITests/Pods-ChuckNorrisJokes-ChuckNorrisJokesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		265BDF0C7767807FFA2F3C22 /* Pods_ChuckNorrisJokes_ChuckNorrisJokesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisJokes_ChuckNorrisJokesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		276DE3AFB08504429F935FD3 /* Pods-ChuckNorrisJokesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokesTests.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokesTests/Pods-ChuckNorrisJokesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		766A1A482634A41700555757 /* JokeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeStorage.swift; sourceTree = "<group>"; };
 		76AE4C93262B34B90028F2EE /* ChuckNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76AE4C96262B34B90028F2EE /* ChuckNorrisJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisJokesApp.swift; sourceTree = "<group>"; };
-		76AE4C98262B34B90028F2EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		76AE4C98262B34B90028F2EE /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		76AE4C9A262B34B90028F2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76AE4C9D262B34B90028F2EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76AE4C9F262B34B90028F2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		76AE4CCF262B35630028F2EE /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		76AE4CD4262B357B0028F2EE /* JokeApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeApiService.swift; sourceTree = "<group>"; };
 		76AE4CE0262BF88C0028F2EE /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		76D95D102634AB1B00C66CC2 /* RealmUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmUtils.swift; sourceTree = "<group>"; };
+		76D95D1A2634ABC000C66CC2 /* JokeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRepository.swift; sourceTree = "<group>"; };
 		8F5AC793E6190304E3EA35FD /* Pods_ChuckNorrisJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckNorrisJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46D067537DB0B952E9AAF31 /* Pods-ChuckNorrisJokes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokes.debug.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokes/Pods-ChuckNorrisJokes.debug.xcconfig"; sourceTree = "<group>"; };
 		E2D485A9D92E0B1E6237C294 /* Pods-ChuckNorrisJokes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckNorrisJokes.release.xcconfig"; path = "Target Support Files/Pods-ChuckNorrisJokes/Pods-ChuckNorrisJokes.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +124,74 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		766A1A3C2634A3CB00555757 /* Jokes */ = {
+			isa = PBXGroup;
+			children = (
+				766A1A442634A3EE00555757 /* Data */,
+				766A1A432634A3E500555757 /* UI */,
+			);
+			path = Jokes;
+			sourceTree = "<group>";
+		};
+		766A1A432634A3E500555757 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4C98262B34B90028F2EE /* JokeView.swift */,
+				76AE4CCF262B35630028F2EE /* JokeViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		766A1A442634A3EE00555757 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				76D95D192634ABB200C66CC2 /* Repository */,
+				76D95D182634ABA400C66CC2 /* DataSource */,
+				766A1A462634A3FA00555757 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		766A1A452634A3F500555757 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4CD4262B357B0028F2EE /* JokeApiService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		766A1A462634A3FA00555757 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4CCA262B354E0028F2EE /* JokeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		766A1A472634A40700555757 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				766A1A482634A41700555757 /* JokeStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		766A1A502634A45300555757 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4C96262B34B90028F2EE /* ChuckNorrisJokesApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		766A1A512634A45F00555757 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				76AE4CE0262BF88C0028F2EE /* State.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		76AE4C8A262B34B90028F2EE = {
 			isa = PBXGroup;
 			children = (
@@ -143,15 +217,13 @@
 		76AE4C95262B34B90028F2EE /* ChuckNorrisJokes */ = {
 			isa = PBXGroup;
 			children = (
-				76AE4C96262B34B90028F2EE /* ChuckNorrisJokesApp.swift */,
-				76AE4C98262B34B90028F2EE /* ContentView.swift */,
+				76D95D0F2634AB0800C66CC2 /* Utils */,
+				766A1A512634A45F00555757 /* Core */,
+				766A1A502634A45300555757 /* Application */,
+				766A1A3C2634A3CB00555757 /* Jokes */,
 				76AE4C9A262B34B90028F2EE /* Assets.xcassets */,
 				76AE4C9F262B34B90028F2EE /* Info.plist */,
 				76AE4C9C262B34B90028F2EE /* Preview Content */,
-				76AE4CCA262B354E0028F2EE /* JokeModel.swift */,
-				76AE4CCF262B35630028F2EE /* JokeViewModel.swift */,
-				76AE4CD4262B357B0028F2EE /* JokeApiService.swift */,
-				76AE4CE0262BF88C0028F2EE /* State.swift */,
 			);
 			path = ChuckNorrisJokes;
 			sourceTree = "<group>";
@@ -180,6 +252,31 @@
 				76AE4CB5262B34BA0028F2EE /* Info.plist */,
 			);
 			path = ChuckNorrisJokesUITests;
+			sourceTree = "<group>";
+		};
+		76D95D0F2634AB0800C66CC2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				76D95D102634AB1B00C66CC2 /* RealmUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		76D95D182634ABA400C66CC2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				766A1A472634A40700555757 /* Storage */,
+				766A1A452634A3F500555757 /* Network */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		76D95D192634ABB200C66CC2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				76D95D1A2634ABC000C66CC2 /* JokeRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +309,7 @@
 				76AE4CA0262B34B90028F2EE /* Sources */,
 				76AE4CA1262B34B90028F2EE /* Frameworks */,
 				76AE4CA2262B34B90028F2EE /* Resources */,
+				405BF429047086A026C7A483 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,6 +427,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckNorrisJokes/Pods-ChuckNorrisJokes-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		405BF429047086A026C7A483 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckNorrisJokesTests/Pods-ChuckNorrisJokesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckNorrisJokesTests/Pods-ChuckNorrisJokesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckNorrisJokesTests/Pods-ChuckNorrisJokesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8490F86F8D3D033445C4D290 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,10 +535,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				76AE4CD5262B357B0028F2EE /* JokeApiService.swift in Sources */,
-				76AE4C99262B34B90028F2EE /* ContentView.swift in Sources */,
+				766A1A492634A41700555757 /* JokeStorage.swift in Sources */,
+				76AE4C99262B34B90028F2EE /* JokeView.swift in Sources */,
 				76AE4C97262B34B90028F2EE /* ChuckNorrisJokesApp.swift in Sources */,
 				76AE4CCB262B354E0028F2EE /* JokeModel.swift in Sources */,
+				76D95D112634AB1B00C66CC2 /* RealmUtils.swift in Sources */,
 				76AE4CD0262B35630028F2EE /* JokeViewModel.swift in Sources */,
+				76D95D1B2634ABC000C66CC2 /* JokeRepository.swift in Sources */,
 				76AE4CE1262BF88C0028F2EE /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
