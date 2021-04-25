@@ -2,9 +2,14 @@ import SwiftUI
 
 @main
 struct ChuckNorrisJokesApp: App {
-    var body: some Scene {
-        WindowGroup {
-            JokeView()
-        }
+  
+  init() {
+    ApplicationServiceLocatorModule.register()
+  }
+  
+  var body: some Scene {
+    WindowGroup {
+      JokeView()
     }
+  }
 }

@@ -5,15 +5,24 @@ struct JokeView: View {
   
   @StateObject var viewModel = JokeViewModel()
   
+  init() {
+    JokeServiceLocatorModule.register()
+  }
+  
   var body: some View {
     NavigationView{
       VStack{
+        NavigationLink(
+          destination: JokesHistoryView(),
+          label: {
+            Text(Resources.JokeText.history).font(.system(size: Resources.JokeSize.historyText))
+          })
         Group {viewState()}.padding()
-        Button("Press me", action: {
+        Button(Resources.JokeText.pressMe, action: {
           viewModel.fetchJoke()
-        }).font(.system(size: 33))
+        }).font(.system(size: Resources.JokeSize.pressMeText))
       }
-      .navigationTitle("Jokes")
+      .navigationTitle(Resources.JokeText.jokeScreenTitle)
     }
   }
   
@@ -34,11 +43,16 @@ struct JokeView: View {
     return AnyView(
       Image("downArrow")
         .resizable()
-        .frame(width: 250, height: 250, alignment: .center))
+        .frame(
+          width: Resources.JokeSize.jokeImage,
+          height: Resources.JokeSize.jokeImage,
+          alignment: .center
+        )
+    )
   }
   
   func loadingView() -> AnyView {
-    return AnyView(Text("Loading"))
+    return AnyView(Text(Resources.JokeText.loading))
   }
   
   func errorView(_ message: String) -> AnyView {
@@ -54,7 +68,7 @@ struct JokeView: View {
             image.aspectRatio(contentMode: .fit)
           })
       }
-      Text(model.message).font(.system(size: 19))
+      Text(model.message).font(.system(size: Resources.JokeSize.jokeText))
     })
   }
 }
