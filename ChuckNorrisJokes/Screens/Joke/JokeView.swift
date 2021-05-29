@@ -12,15 +12,32 @@ struct JokeView: View {
   var body: some View {
     NavigationView{
       VStack{
+        viewState().padding()
+        Spacer()
+        Button(action: {
+          viewModel.fetchJoke()
+        }) {
+          HStack {
+            Image(systemName: "swift")
+              .font(.system(size: Resources.JokeSize.historyText))
+            Text(Resources.JokeText.pressMe)
+              .fontWeight(.semibold)
+              .font(.system(size: Resources.JokeSize.historyText))
+          }
+          .padding()
+          .background(
+            RoundedRectangle(cornerRadius: 5)
+              .fill(Color.white)
+              .shadow(color: .gray, radius: 2, x: 0, y: 2)
+          )
+        }
         NavigationLink(
           destination: JokesHistoryView(),
           label: {
-            Text(Resources.JokeText.history).font(.system(size: Resources.JokeSize.historyText))
+            Text(Resources.JokeText.history)
+              .font(.system(size: Resources.JokeSize.historyText))
+              .padding()
           })
-        Group {viewState()}.padding()
-        Button(Resources.JokeText.pressMe, action: {
-          viewModel.fetchJoke()
-        }).font(.system(size: Resources.JokeSize.pressMeText))
       }
       .navigationTitle(Resources.JokeText.jokeScreenTitle)
     }

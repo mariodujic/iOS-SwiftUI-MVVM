@@ -8,7 +8,7 @@ struct Resources {
     static let loading = "Loading"
   }
   struct JokeSize {
-    static let historyText = CGFloat(29)
+    static let historyText = CGFloat(15)
     static let pressMeText = CGFloat(33)
     static let jokeText = CGFloat(19)
     static let jokeImage = CGFloat(250)
