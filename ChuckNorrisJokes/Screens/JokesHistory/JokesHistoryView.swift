@@ -2,14 +2,16 @@ import SwiftUI
 
 struct JokesHistoryView: View {
   
-  private var viewModel = JokesHistoryViewModel()
+  private var viewModel: JokesHistoryViewModelProtocol = JokesHistoryViewModel()
   
   var body: some View {
     NavigationView{
       List(viewModel.getPreviousJokes()!, id: \.self) { joke in
         Text(joke.message)
       }
-      .navigationTitle(Resources.PreviousJokesText.previousJokesScreenTitle)
+      .navigationBarTitle(
+        Resources.PreviousJokesText.previousJokesScreenTitle+" (\(viewModel.getPreviousJokesSize()))", displayMode: .inline
+      )
     }
   }
 }

@@ -1,4 +1,9 @@
-class JokesHistoryViewModel {
+protocol JokesHistoryViewModelProtocol {
+  func getPreviousJokes() -> [JokeModel]?
+ func getPreviousJokesSize() -> Int
+}
+
+class JokesHistoryViewModel: JokesHistoryViewModelProtocol {
   
   private let repository: JokeRepositoryProtocol?
   
@@ -8,5 +13,9 @@ class JokesHistoryViewModel {
   
   func getPreviousJokes() -> [JokeModel]? {
     return self.repository?.getPreviousJokes()
+  }
+  
+  func getPreviousJokesSize() -> Int {
+    return self.getPreviousJokes()?.count ?? 0;
   }
 }
